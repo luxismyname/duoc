@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:fitsSystemWindows="true"
+            android:minHeight="?attr/actionBarSize"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ctlFilter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorBackgroundGroup"
+        android:padding="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/appBarToolbar">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/ctlEditTextTimKiem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <EditText
+                android:id="@+id/etTimKiem"
+                style="@style/AppTheme.EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_edittext_search"
+                android:drawableRight="@drawable/ic_delete_transparent"
+                android:drawablePadding="5dp"
+                android:hint="@string/thongkecongno_edittext_hint_timkiem"
+                android:inputType="text"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/btnClear"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/btnClear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/title_button_clear"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_delete" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ctlFilter">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/ctlHeaderColumn"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/colorBackgroundHeaderColumn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/tvTenKhachHang"
+                style="@style/AppTheme.TextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/colTenKhachHang"
+                android:textColor="@color/colorTilteColumn"
+                android:textSize="@dimen/subtitle_textsize"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/ctlColCuoiKy"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/ctlColCuoiKy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/tvTenKhachHang"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/tvPhaiThuCK"
+                    style="@style/AppTheme.TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:minWidth="95dp"
+                    android:text="@string/colPhaiThu"
+                    android:textColor="@color/colorTilteColumn"
+                    android:textSize="@dimen/subtitle_textsize"
+                    android:textStyle="bold"
+                    android:visibility="visible"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/tvPhaiTraCK"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvPhaiTraCK"
+                    style="@style/AppTheme.TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:gravity="center"
+                    android:minWidth="95dp"
+                    android:text="@string/colPhaiTra"
+                    android:textColor="@color/colorTilteColumn"
+                    android:textSize="@dimen/subtitle_textsize"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/tvPhaiThuCK"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvListData"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@id/ctlFooter"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ctlHeaderColumn"></androidx.recyclerview.widget.RecyclerView>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/ctlFooter"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/colorBackgroundHeaderColumn"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/rvListData">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/ctlTongSoDong"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/ctlFooterCuoiKy"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/titleTongSoDong"
+                    style="@style/AppTheme.TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="@string/totalTongKhachHang"
+                    android:textColor="@color/colorTilteColumn"
+                    android:textSize="@dimen/subtitle_textsize"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvTongSoDong"
+                    style="@style/AppTheme.TextView"
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="4dp"
+                    android:background="@color/colorBackground"
+                    android:gravity="center"
+                    android:paddingStart="4dp"
+                    android:paddingEnd="4dp"
+                    android:text=""
+                    android:textColor="@color/colorTilteColumn"
+                    android:textSize="@dimen/subtitle_textsize"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/titleTongSoDong"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/ctlFooterCuoiKy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/ctlTongSoDong"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/tvTongPhaiThuCK"
+                    style="@style/AppTheme.TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="8dp"
+                    android:background="@color/colorBackground"
+                    android:gravity="center"
+                    android:minWidth="95dp"
+                    android:paddingStart="4dp"
+                    android:paddingEnd="4dp"
+                    android:text=""
+                    android:textColor="@color/colorTilteColumn"
+                    android:textSize="@dimen/subtitle_textsize"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/tvTongPhaiTraCK"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvTongPhaiTraCK"
+                    style="@style/AppTheme.TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="8dp"
+                    android:background="@color/colorBackground"
+                    android:gravity="center"
+                    android:minWidth="95dp"
+                    android:paddingStart="4dp"
+                    android:paddingEnd="4dp"
+                    android:text=""
+                    android:textColor="@color/colorTilteColumn"
+                    android:textSize="@dimen/subtitle_textsize"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/tvTongPhaiThuCK"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/tvTongPhaiThuDK"
+        style="@style/AppTheme.TextView"
+        android:layout_width="110dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:background="@color/colorBackground"
+        android:gravity="center"
+        android:paddingStart="4dp"
+        android:paddingEnd="4dp"
+        android:text=""
+        android:textColor="@color/colorTilteColumn"
+        android:textSize="@dimen/subtitle_textsize"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvTongPhaiTraDK"
+        style="@style/AppTheme.TextView"
+        android:layout_width="110dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:background="@color/colorBackground"
+        android:gravity="center"
+        android:paddingStart="4dp"
+        android:paddingEnd="4dp"
+        android:text=""
+        android:textColor="@color/colorTilteColumn"
+        android:textSize="@dimen/subtitle_textsize"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvTongPSNhap"
+        style="@style/AppTheme.TextView"
+        android:layout_width="110dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:background="@color/colorBackground"
+        android:gravity="center"
+        android:paddingStart="4dp"
+        android:paddingEnd="4dp"
+        android:text=""
+        android:textColor="@color/colorTilteColumn"
+        android:textSize="@dimen/subtitle_textsize"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvTongPSXuat"
+        style="@style/AppTheme.TextView"
+        android:layout_width="110dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:background="@color/colorBackground"
+        android:gravity="center"
+        android:paddingStart="4dp"
+        android:paddingEnd="4dp"
+        android:text=""
+        android:textColor="@color/colorTilteColumn"
+        android:textSize="@dimen/subtitle_textsize"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvTongPSThu"
+        style="@style/AppTheme.TextView"
+        android:layout_width="110dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:background="@color/colorBackground"
+        android:gravity="center"
+        android:paddingStart="4dp"
+        android:paddingEnd="4dp"
+        android:text=""
+        android:textColor="@color/colorTilteColumn"
+        android:textSize="@dimen/subtitle_textsize"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvTongPSChi"
+        style="@style/AppTheme.TextView"
+        android:layout_width="110dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:background="@color/colorBackground"
+        android:gravity="center"
+        android:paddingStart="4dp"
+        android:paddingEnd="4dp"
+        android:text=""
+        android:textColor="@color/colorTilteColumn"
+        android:textSize="@dimen/subtitle_textsize"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

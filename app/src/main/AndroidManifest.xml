@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.bongmai.tiha">
+
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.Manifest.permission.READ_PRIVILEGED_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+
+    <application
+        android:name=".utils.AppController"
+        android:allowBackup="false"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar"
+        android:usesCleartextTraffic="true"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity
+            android:name=".ui.chungtu.phieugiaohang.report.luongtheonvgh.ThongKeLuongNhanVienGiaoHangTheoQuangDuongActivity"
+            android:exported="false" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity
+            android:name=".ui.test.TestActivity"
+            android:exported="true" />
+        <activity android:name=".ui.chungtu.phieugiaohang.report.thongke.ThongKeQuangDuongNhanVienGiaoHangActivity" />
+        <activity android:name=".ui.UserKhacActivity" />
+        <activity android:name=".ui.chungtu.phieugiaohang.thongkegiaonhanhang.list.GiaoNhanHangActivity" />
+        <activity android:name=".ui.chungtu.phieugiaohang.report.chitiet.QuangDuongNhanVienGiaoHangChiTietActivity" />
+        <activity android:name=".ui.chungtu.phieugiaohang.chonnhanviengiaohang.ChonEmployeeActivity" />
+        <activity android:name=".ui.baocao.chitietbaocao.BaoCaoGiaoHangChiTietActivity" />
+        <activity android:name=".ui.chungtu.phieugiaohang.report.QuangDuongNhanVienGiaoHangActivity" />
+        <activity android:name=".ui.khac.NhanVienGiaoHangDialog" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity android:name=".ui.chungtu.phieugiaohang.detail.CapNhatTrangThaiActivity" />
+        <activity android:name=".ui.danhmuc.trangthai.TrangThaiActivity" />
+        <activity android:name=".ui.danhmuc.product.allproduct.GetMultipleProductActivity" />
+        <activity android:name=".ui.danhmuc.soduvattu.fragment.SoDuVatTuDetailActivity" />
+        <activity android:name=".ui.danhmuc.soduvattu.them.ThemSoDuVatTuActivity" />
+        <activity android:name=".ui.danhmuc.soduvattu.list.ListSoDuVatTuActivity" />
+        <activity android:name=".ui.danhmuc.chucvu.ChucVuListActivity" />
+        <activity android:name=".ui.danhmuc.employee.bophannhanvien.ListBoPhanActivity" />
+        <activity android:name=".ui.danhmuc.employee.EmployeeListActivity" />
+        <activity android:name=".ui.danhmuc.employee.updatethongtinnhanvien.UpdateThongTinNhanVienActivity" />
+        <activity android:name=".ui.danhmuc.employee.themnhanvien.ThemNhanVienActivity" />
+        <activity android:name=".ui.chungtu.phieuxuat.viewdetail.PhieuBanSiDetailActivity" />
+        <activity android:name=".ui.danhmuc.product.EditSanPham.EditSanPhamActivity" />
+        <activity android:name=".ui.danhmuc.supplier.EditKhachHang.EditKhachHangActivity" />
+        <activity android:name=".ui.hethong.splash.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- <activity android:name=".ui.hethong.splash.SplashActivity"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.intent.action.MAIN" /> -->
+        <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+        <!-- </intent-filter> -->
+        <!-- </activity> -->
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.hethong.login.LoginActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.danhmuc.supplier.list.SupplierListActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.danhmuc.supplier.ThemKhachHangActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.danhmuc.product.list.ProductListActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.danhmuc.diachi.DiaChiListActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.danhmuc.loaihang.list.LoaiHangListActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.baocao.dashboard.DashboardActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.baocao.chitietbaocao.ChiTietBaoCaoActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" /> <!-- Bao cao cuoc goi -->
+        <activity
+            android:name=".ui.baocao.cuocgoi.ThongKeCuocGoiActivity"
+            android:configChanges="orientation|screenSize" /> <!-- Bao cao ban hang -->
+        <activity
+            android:name=".ui.baocao.banhang.NhatKyBanHangActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".ui.baocao.banhang.NhatKyBanHangChiTietActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".ui.baocao.banhang.DoanhSoBanHangTheoNhanVienActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".ui.baocao.banhang.DoanhSoBanHangTheoKhachHangActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".ui.baocao.banhang.DoanhSoBanHangTheoChiNhanhActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".ui.baocao.congno.CongNoTongHopActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".ui.baocao.congno.CongNoTongHopPhaiThuActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".ui.baocao.congno.CongNoTongHopPhaiTraActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".ui.baocao.tonkho.NhatKyNhapHangActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".ui.baocao.tonkho.NhatKyNhapHangChiTietActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".ui.baocao.tonkho.ThongKeTonNuocActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".ui.baocao.tonkho.ThongKeTonVoRongActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".ui.baocao.tonkho.ThongKeTonNuocVoRongActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".ui.chungtu.nhapsoluongsanpham.NhapSoLuongSanPhamActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".ui.chungtu.phieuxuat.PhieuBanSiActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.khac.QuetMaVachActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.danhmuc.kho.danhsachchecked.DanhSachKhoCheckedActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.danhmuc.loaihang.danhsachchecked.DanhSachLoaiHangCheckedActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.danhmuc.product.ThemSanPhamActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.danhmuc.nhomkhachhang.NhomKhachHangListActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.khac.PreviewPictureActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".ui.hethong.config.ConfigActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.danhmuc.kho.list.KhoListActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.hethong.userinfo.ProfileActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.map.MapActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name=".service.LocationService"
+            android:enabled="true"
+            android:exported="false" />
+    </application>
+
+</manifest>

@@ -1,0 +1,881 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swipe_refresh"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ScrollView
+        android:id="@+id/ctlMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvNgayXem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                app:cardCornerRadius="@dimen/cardview_radius"
+                app:cardElevation="@dimen/cardview_elevation"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/ctlNgayXemLeft"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@id/ctlNgayXemCenter"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <TextView
+                            android:id="@+id/tvThoiGianXem"
+                            style="@style/AppTheme.TextView"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="7 ngày qua"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/tvXemTuNgayDenNgay"
+                            style="@style/AppTheme.TextView"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="19/04/2019 - 25/04/2019"
+                            android:textSize="@dimen/subtitle_textsize"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/tvThoiGianXem" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/ctlNgayXemCenter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@id/ctlNgayXemRight"
+                        app:layout_constraintStart_toEndOf="@id/ctlNgayXemLeft"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <TextView
+                            android:id="@+id/tvLine"
+                            style="@style/AppTheme.TextView"
+                            android:layout_width="1dp"
+                            android:layout_height="30dp"
+                            android:background="@color/colorLine"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/ctlNgayXemRight"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/ctlNgayXemCenter"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/ic_calendar_tongquan" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/ctlThongKeChung"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cvNgayXem">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/ctlThongKe1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cvTongDoanhThu"
+                        android:layout_width="0dp"
+                        android:layout_height="80dp"
+
+                        android:layout_marginBottom="2dp"
+                        app:cardCornerRadius="@dimen/cardview_radius"
+                        app:cardElevation="@dimen/cardview_elevation"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@id/cvTongDonHang"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="8dp">
+
+                            <TextView
+                                android:id="@+id/textViewTongDoanhThu"
+                                style="@style/AppTheme.TextView"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:text="@string/dashboard_txt_doanhthu"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/tvTongDoanhThu"
+                                style="@style/AppTheme.TextView"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:text="0"
+                                android:textColor="@color/dashboard_txt_doanhthu"
+                                android:textSize="@dimen/headline_textsize"
+                                android:textStyle="bold"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@id/textViewTongDoanhThu" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cvTongDonHang"
+                        android:layout_width="0dp"
+                        android:layout_height="80dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginBottom="2dp"
+                        app:cardCornerRadius="@dimen/cardview_radius"
+                        app:cardElevation="@dimen/cardview_elevation"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/cvTongDoanhThu"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="8dp">
+
+                            <TextView
+                                android:id="@+id/textViewTongDonHang"
+                                style="@style/AppTheme.TextView"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:text="@string/dashboard_txt_tongdonhang"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/tvTongDonHang"
+                                style="@style/AppTheme.TextView"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:text="0"
+                                android:textColor="@color/dashboard_txt_tongdonhang"
+                                android:textSize="@dimen/headline_textsize"
+                                android:textStyle="bold"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@id/textViewTongDonHang" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/ctlThongKe2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/ctlThongKe1">
+
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cvTongLoiNhuan"
+                        android:layout_width="0dp"
+                        android:layout_height="80dp"
+                        android:layout_marginBottom="2dp"
+                        app:cardCornerRadius="@dimen/cardview_radius"
+                        app:cardElevation="@dimen/cardview_elevation"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@id/cvTongKhachHang"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="8dp">
+
+                            <TextView
+                                android:id="@+id/textViewTongLoiNhuan"
+                                style="@style/AppTheme.TextView"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:text="@string/dashboard_txt_tongloinhuan"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/tvTongLoiNhuan"
+                                style="@style/AppTheme.TextView"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:text="0"
+                                android:textColor="@color/dashboard_txt_tongloinhuan"
+                                android:textSize="@dimen/headline_textsize"
+                                android:textStyle="bold"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@id/textViewTongLoiNhuan" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cvTongKhachHang"
+                        android:layout_width="0dp"
+                        android:layout_height="80dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginBottom="2dp"
+                        app:cardCornerRadius="@dimen/cardview_radius"
+                        app:cardElevation="@dimen/cardview_elevation"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/cvTongLoiNhuan"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="8dp">
+
+                            <TextView
+                                android:id="@+id/textViewTongKhachHang"
+                                style="@style/AppTheme.TextView"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:text="@string/dashboard_txt_tongkhachhang"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/tvTongKhachHang"
+                                style="@style/AppTheme.TextView"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:text="0"
+                                android:textColor="@color/dashboard_txt_tongkhachhang"
+                                android:textSize="@dimen/headline_textsize"
+                                android:textStyle="bold"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@id/textViewTongKhachHang" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/ctlThongkeTien"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/ctlThongKe2">
+
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cvTongTienMat"
+                        android:layout_width="0dp"
+                        android:layout_height="80dp"
+                        android:layout_marginBottom="2dp"
+                        app:cardCornerRadius="@dimen/cardview_radius"
+                        app:cardElevation="@dimen/cardview_elevation"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@id/cvTongTienNganHang"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="8dp">
+
+                            <TextView
+                                android:id="@+id/textViewTongTienMat"
+                                style="@style/AppTheme.TextView"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:text="@string/dashboard_txt_quytienmat"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/tvTongTienMat"
+                                style="@style/AppTheme.TextView"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:text="0"
+                                android:textColor="@color/dashboard_txt_quytienmat"
+                                android:textSize="@dimen/headline_textsize"
+                                android:textStyle="bold"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@id/textViewTongTienMat" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cvTongTienNganHang"
+                        android:layout_width="0dp"
+                        android:layout_height="80dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginBottom="2dp"
+                        app:cardCornerRadius="@dimen/cardview_radius"
+                        app:cardElevation="@dimen/cardview_elevation"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/cvTongTienMat"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="8dp">
+
+                            <TextView
+                                android:id="@+id/textViewTongTienNganHang"
+                                style="@style/AppTheme.TextView"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:text="@string/dashboard_txt_quynganhang"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/tvTongTienNganHang"
+                                style="@style/AppTheme.TextView"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:text="0"
+                                android:textColor="@color/dashboard_txt_quynganhang"
+                                android:textSize="@dimen/headline_textsize"
+                                android:textStyle="bold"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@id/textViewTongTienNganHang" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvTonKho"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                app:cardCornerRadius="@dimen/cardview_radius"
+                app:cardElevation="@dimen/cardview_elevation"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ctlThongKeChung">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:id="@+id/tvTonKhoTitle"
+                        style="@style/AppTheme.TextView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Thông tin kho"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/ctlSlTonKho"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tvTonKhoTitle">
+
+                        <TextView
+                            android:id="@+id/tvSlTonKhoTitle"
+                            style="@style/AppTheme.TextView"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="Số lượng tồn kho"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toStartOf="@id/tvSlTonKho"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/tvSlTonKho"
+                            style="@style/AppTheme.TextView"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:gravity="right"
+                            android:text="0"
+                            android:textSize="@dimen/headline_textsize"
+                            android:textStyle="bold"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@id/tvSlTonKhoTitle"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/ctlGiaTriTonKho"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/ctlSlTonKho">
+
+                        <TextView
+                            android:id="@+id/tvGiaTriTonKhoTitle"
+                            style="@style/AppTheme.TextView"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="Giá trị tồn kho"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toStartOf="@id/tvGiaTriTonKho"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/tvGiaTriTonKho"
+                            style="@style/AppTheme.TextView"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:gravity="right"
+                            android:text="0"
+                            android:textSize="@dimen/headline_textsize"
+                            android:textStyle="bold"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@id/tvGiaTriTonKhoTitle"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvHangCoXuat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+
+                app:cardCornerRadius="@dimen/cardview_radius"
+                app:cardElevation="@dimen/cardview_elevation"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cvTonKho">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:id="@+id/tvHangCoXuatTitle"
+                        style="@style/AppTheme.TextView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Hàng hóa có xuất"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:visibility="visible"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tvHangCoXuatTitle">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/ctlHeaderColumn"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@color/colorBackgroundHeaderColumn"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+
+                            <TextView
+                                android:id="@+id/tvTenSanPham"
+                                style="@style/AppTheme.TextView"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="8dp"
+                                android:text="@string/colTenHang"
+                                android:textColor="@color/colorTilteColumn"
+                                android:textSize="@dimen/subtitle_textsize"
+                                android:textStyle="bold"
+                                android:visibility="visible"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toStartOf="@id/tvXuat"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+
+                            <TextView
+                                android:id="@+id/tvXuat"
+                                style="@style/AppTheme.TextView"
+                                android:layout_width="80dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="8dp"
+                                android:gravity="center"
+                                android:text="@string/colSoLuongXuat"
+                                android:textColor="@color/colorTilteColumn"
+                                android:textSize="@dimen/subtitle_textsize"
+                                android:textStyle="bold"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toStartOf="@id/tvCuoiKy"
+                                app:layout_constraintStart_toEndOf="@id/tvTenSanPham"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+
+                            <TextView
+                                android:id="@+id/tvCuoiKy"
+                                style="@style/AppTheme.TextView"
+                                android:layout_width="80dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginEnd="8dp"
+                                android:gravity="center"
+                                android:text="@string/colSoLuongTon"
+                                android:textColor="@color/colorTilteColumn"
+                                android:textSize="@dimen/subtitle_textsize"
+                                android:textStyle="bold"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toEndOf="@id/tvXuat"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rvHangCoXuat"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="visible"
+                            android:minHeight="80dp"
+                            app:layout_constraintBottom_toTopOf="@id/ctlFooter"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/ctlHeaderColumn"></androidx.recyclerview.widget.RecyclerView>
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/ctlFooter"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@color/colorBackgroundHeaderColumn"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/rvHangCoXuat">
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:id="@+id/ctlTongSoDong"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:visibility="visible"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toStartOf="@id/tvTongPSXuatHangCoXuat"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent">
+
+                                <TextView
+                                    android:id="@+id/titleTongSoDong"
+                                    style="@style/AppTheme.TextView"
+                                    android:layout_width="90dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="8dp"
+                                    android:layout_marginEnd="4dp"
+                                    android:text="@string/totalTongSanPham"
+                                    android:textColor="@color/colorTilteColumn"
+                                    android:textSize="@dimen/subtitle_textsize"
+                                    android:textStyle="bold"
+                                    app:layout_constraintEnd_toStartOf="@id/tvTongSoDongHangCoXuat"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <TextView
+                                    android:id="@+id/tvTongSoDongHangCoXuat"
+                                    style="@style/AppTheme.TextView"
+                                    android:layout_width="50dp"
+                                    android:layout_height="30dp"
+                                    android:layout_marginStart="4dp"
+                                    android:background="@color/colorBackground"
+                                    android:gravity="center"
+                                    android:paddingStart="4dp"
+                                    android:paddingEnd="4dp"
+                                    android:text=""
+                                    android:textColor="@color/colorTilteColumn"
+                                    android:textSize="@dimen/subtitle_textsize"
+                                    android:textStyle="bold"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintStart_toEndOf="@id/titleTongSoDong"
+                                    app:layout_constraintTop_toTopOf="parent" />
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                            <TextView
+                                android:id="@+id/tvTongPSXuatHangCoXuat"
+                                style="@style/AppTheme.TextView"
+                                android:layout_width="80dp"
+                                android:layout_height="30dp"
+                                android:layout_marginStart="8dp"
+                                android:background="@color/colorBackground"
+                                android:gravity="center"
+                                android:paddingStart="4dp"
+                                android:paddingEnd="4dp"
+                                android:text=""
+                                android:textColor="@color/colorTilteColumn"
+                                android:textSize="@dimen/subtitle_textsize"
+                                android:textStyle="bold"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toStartOf="@id/tvTongCuoiKyHangCoXuat"
+                                app:layout_constraintStart_toEndOf="@id/ctlTongSoDong"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/tvTongCuoiKyHangCoXuat"
+                                style="@style/AppTheme.TextView"
+                                android:layout_width="80dp"
+                                android:layout_height="30dp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginEnd="8dp"
+                                android:background="@color/colorBackground"
+                                android:gravity="center"
+                                android:paddingStart="4dp"
+                                android:paddingEnd="4dp"
+                                android:text=""
+                                android:textColor="@color/colorTilteColumn"
+                                android:textSize="@dimen/subtitle_textsize"
+                                android:textStyle="bold"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toEndOf="@id/tvTongPSXuatHangCoXuat"
+                                app:layout_constraintTop_toTopOf="parent" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvBieuDoDoanhThu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                app:cardCornerRadius="@dimen/cardview_radius"
+                app:cardElevation="@dimen/cardview_elevation"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cvHangCoXuat">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/cltBieuDoDoanhThu">
+
+                    <TextView
+                        android:id="@+id/tvBieuDoDoanhThuTitle"
+                        style="@style/AppTheme.TextView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:text="Doanh thu"
+                        android:textStyle="bold"
+                        android:visibility="visible"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <lecho.lib.hellocharts.view.ColumnChartView
+                        android:id="@+id/chart"
+                        android:layout_width="match_parent"
+                        android:layout_height="400dp"
+                        android:layout_marginTop="8dp"
+                        android:paddingTop="8dp"
+                        android:paddingStart="8dp"
+                        android:paddingEnd="8dp"
+                        android:paddingBottom="20dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tvBieuDoDoanhThuTitle" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvHangBanChay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                app:cardCornerRadius="@dimen/cardview_radius"
+                app:cardElevation="@dimen/cardview_elevation"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cvBieuDoDoanhThu">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ctlHangBanChay"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:id="@+id/tvHangBanChayTitle"
+                        style="@style/AppTheme.TextView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Hàng bán chạy"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tvHangBanChayDescription"
+                        style="@style/AppTheme.TextView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="Theo số lượng"
+                        android:textSize="@dimen/subtitle_textsize"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tvHangBanChayTitle" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvHangBanChay"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tvHangBanChayDescription" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:id="@+id/viewView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cvHangBanChay" />
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:id="@+id/ctlAppsInfo"
+                app:layout_constraintTop_toBottomOf="@id/viewView"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvVersion"
+                    style="@style/AppTheme.TextView"
+                    android:textAlignment="center"
+                    android:text="Phiên bản hiện tại: 1.0"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ctlHeaderColumns"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:id="@+id/tvLoaiPhieu"
+            android:layout_width="120dp"
+            android:layout_height="0dp"
+            android:background="@drawable/table_content_cell_bg"
+            android:gravity="left|center"
+            android:padding="4dp"
+            android:minHeight="40dp"
+            style="@style/AppTheme.TextView"
+            android:textSize="@dimen/subtitle_textsize"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/tvSoPhieu"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/tvSoPhieu"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/table_content_cell_bg"
+            android:padding="4dp"
+            android:minHeight="40dp"
+            android:gravity="left|center"
+            style="@style/AppTheme.TextView"
+            android:text=""
+            android:textSize="@dimen/subtitle_textsize"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/ctlColumnDauKy"
+            app:layout_constraintStart_toEndOf="@id/tvLoaiPhieu"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/ctlColumnDauKy"
+            android:layout_width="200dp"
+            android:layout_height="0dp"
+            android:minHeight="40dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/ctlColumnNhap"
+            app:layout_constraintStart_toEndOf="@id/tvSoPhieu"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/tvDauKyNuoc"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/table_content_cell_bg"
+                android:gravity="center"
+                android:padding="4dp"
+                style="@style/AppTheme.TextView"
+                android:text="0"
+                android:textSize="@dimen/subtitle_textsize"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/tvDauKyVo"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvDauKyVo"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                style="@style/AppTheme.TextView"
+                android:text="0"
+                android:textSize="@dimen/subtitle_textsize"
+                android:padding="4dp"
+                android:background="@drawable/table_content_cell_bg"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/tvDauKyNuoc"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/ctlColumnNhap"
+            android:layout_width="200dp"
+            android:layout_height="0dp"
+            android:minHeight="40dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/ctlColumnXuat"
+            app:layout_constraintStart_toEndOf="@id/ctlColumnDauKy"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/tvNhapNuoc"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/table_content_cell_bg"
+                android:gravity="center"
+                style="@style/AppTheme.TextView"
+                android:text="0"
+                android:textSize="@dimen/subtitle_textsize"
+                android:padding="4dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/tvNhapVo"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvNhapVo"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                style="@style/AppTheme.TextView"
+                android:text="0"
+                android:textSize="@dimen/subtitle_textsize"
+                android:background="@drawable/table_content_cell_bg"
+                android:padding="4dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/tvNhapNuoc"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/ctlColumnXuat"
+            android:layout_width="200dp"
+            android:layout_height="0dp"
+            android:minHeight="40dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/ctlColumnChuyenDen"
+            app:layout_constraintStart_toEndOf="@id/ctlColumnNhap"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/tvXuatNuoc"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/table_content_cell_bg"
+                android:gravity="center"
+                android:padding="4dp"
+                style="@style/AppTheme.TextView"
+                android:text="0"
+                android:textSize="@dimen/subtitle_textsize"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/tvXuatVo"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvXuatVo"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:padding="4dp"
+                style="@style/AppTheme.TextView"
+                android:text="0"
+                android:textSize="@dimen/subtitle_textsize"
+                android:background="@drawable/table_content_cell_bg"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/tvXuatNuoc"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/ctlColumnChuyenDen"
+            android:layout_width="200dp"
+            android:layout_height="0dp"
+            android:minHeight="40dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/ctlColumnChuyenDi"
+            app:layout_constraintStart_toEndOf="@id/ctlColumnXuat"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/tvChuyenDenNuoc"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/table_content_cell_bg"
+                android:gravity="center"
+                android:padding="4dp"
+                style="@style/AppTheme.TextView"
+                android:text="0"
+                android:textSize="@dimen/subtitle_textsize"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/tvChuyenDenVo"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvChuyenDenVo"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:padding="4dp"
+                style="@style/AppTheme.TextView"
+                android:text="0"
+                android:textSize="@dimen/subtitle_textsize"
+                android:background="@drawable/table_content_cell_bg"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/tvChuyenDenNuoc"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/ctlColumnChuyenDi"
+            android:layout_width="200dp"
+            android:layout_height="0dp"
+            android:minHeight="40dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/ctlColumnCuoiKy"
+            app:layout_constraintStart_toEndOf="@id/ctlColumnChuyenDen"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/tvChuyenDiNuoc"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/table_content_cell_bg"
+                android:gravity="center"
+                android:padding="4dp"
+                style="@style/AppTheme.TextView"
+                android:text="0"
+                android:textSize="@dimen/subtitle_textsize"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/tvChuyenDiVo"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvChuyenDiVo"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                style="@style/AppTheme.TextView"
+                android:text="0"
+                android:textSize="@dimen/subtitle_textsize"
+                android:padding="4dp"
+                android:background="@drawable/table_content_cell_bg"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/tvChuyenDiNuoc"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/ctlColumnCuoiKy"
+            android:layout_width="200dp"
+            android:layout_height="0dp"
+            android:minHeight="40dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/ctlColumnChuyenDi"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/tvCuoiKyNuoc"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/table_content_cell_bg"
+                android:gravity="center"
+                android:padding="4dp"
+                style="@style/AppTheme.TextView"
+                android:text="0"
+                android:textSize="@dimen/subtitle_textsize"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/tvCuoiKyVo"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvCuoiKyVo"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                style="@style/AppTheme.TextView"
+                android:text="0"
+                android:textSize="@dimen/subtitle_textsize"
+                android:background="@drawable/table_content_cell_bg"
+                android:padding="4dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/tvCuoiKyNuoc"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

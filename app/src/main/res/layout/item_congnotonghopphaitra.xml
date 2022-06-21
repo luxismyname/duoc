@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="40dp"
+    android:background="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true">
+
+    <TextView
+        android:id="@+id/tvNhomKH"
+        style="@style/AppTheme.TextView"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Nhom KH"
+        android:textSize="@dimen/subtitle_textsize"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tvMaKhachHang"/>
+
+    <TextView
+        android:id="@+id/tvMaKhachHang"
+        style="@style/AppTheme.TextView"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Ma KH"
+        android:textSize="@dimen/subtitle_textsize"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tvNhomKH"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tvTenKhachHang"/>
+
+    <TextView
+        android:id="@+id/tvTenKhachHang"
+        style="@style/AppTheme.TextView"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Tên khách hàng"
+        android:textSize="@dimen/subtitle_textsize"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tvMaKhachHang"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tvDiaChi"/>
+
+    <TextView
+        android:id="@+id/tvDiaChi"
+        style="@style/AppTheme.TextView"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Dia chi"
+        android:textSize="@dimen/subtitle_textsize"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tvTenKhachHang"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tvPhaiTraDK"/>
+
+    <TextView
+        android:id="@+id/tvPhaiTraDK"
+        style="@style/AppTheme.TextView"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:gravity="center"
+        android:text="Phai thu dk"
+        android:textSize="@dimen/subtitle_textsize"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tvDiaChi"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tvNhap"/>
+
+
+    <TextView
+        android:id="@+id/tvNhap"
+        style="@style/AppTheme.TextView"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:gravity="center"
+        android:text="Nhap"
+        android:textSize="@dimen/subtitle_textsize"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tvPhaiTraDK"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tvXuat"/>
+
+    <TextView
+        android:id="@+id/tvXuat"
+        style="@style/AppTheme.TextView"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:gravity="center"
+        android:text="Xuat"
+        android:textSize="@dimen/subtitle_textsize"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tvNhap"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tvThu"/>
+
+    <TextView
+        android:id="@+id/tvThu"
+        style="@style/AppTheme.TextView"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:gravity="center"
+        android:text="Tra"
+        android:textSize="@dimen/subtitle_textsize"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tvXuat"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tvChi"/>
+
+    <TextView
+        android:id="@+id/tvChi"
+        style="@style/AppTheme.TextView"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:gravity="center"
+        android:text="Chi"
+        android:textSize="@dimen/subtitle_textsize"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tvThu"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tvPhaiTraCK"/>
+
+    <TextView
+        android:id="@+id/tvPhaiTraCK"
+        style="@style/AppTheme.TextView"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:gravity="center"
+        android:text="Phai tra ck"
+        android:textSize="@dimen/subtitle_textsize"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tvChi"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

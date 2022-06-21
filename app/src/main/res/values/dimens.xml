@@ -1,0 +1,68 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <!--button-->
+    <dimen name="button_radius">2dp</dimen>
+    <dimen name="button_small_height">25dp</dimen>
+    <dimen name="button_height">35dp</dimen>
+    <dimen name="button_large_height">40dp</dimen>
+    <dimen name="button_itemlist_height">30dp</dimen>
+    <dimen name="button_padding">5dp</dimen>
+    <dimen name="button_small_title_textsize">@dimen/subtitle_textsize</dimen>
+    <dimen name="button_title_textsize">@dimen/title_textsize</dimen>
+    <dimen name="button_large_title_textsize">@dimen/headline_textsize</dimen>
+    <!--cardview-->
+    <dimen name="cardview_radius">5dp</dimen>
+    <dimen name="cardview_elevation">2dp</dimen>
+    <dimen name="divider_height">2dp</dimen>
+    <!--edittext-->
+    <dimen name="edittext_radius">2dp</dimen>
+    <dimen name="edittext_padding">10dp</dimen>
+    <dimen name="edittext_padding_image">8dp</dimen>
+    <dimen name="edittext_height">35dp</dimen>
+    <dimen name="edittext_border_width">1dp</dimen>
+    <!--text-->
+    <dimen name="headline_textsize">19sp</dimen>
+    <dimen name="title_textsize">15sp</dimen>
+    <dimen name="subtitle_textsize">12sp</dimen>
+    <!--spinner-->
+    <dimen name="spinner_height">40dp</dimen>
+    <dimen name="spinner_radius">5dp</dimen>
+    <dimen name="spinner_padding">8dp</dimen>
+    <!--fab-->
+
+    <!--CircleImageView-->
+    <dimen name="border_width_image">1dp</dimen>
+
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_margin">16dp</dimen>
+    <dimen name="activity_margin_quarter">4dp</dimen>
+    <dimen name="activity_margin_content">24dp</dimen>
+    <dimen name="activity_margin_half">8dp</dimen>
+
+    <dimen name="paddingItemDecorationDefault">8dp</dimen>
+    <dimen name="paddingItemDecorationEdge">24dp</dimen>
+
+    <dimen name="poster_thumb_width">72dp</dimen>
+    <dimen name="poster_thumb_height">96dp</dimen>
+
+    <dimen name="poster_hero_height">192dp</dimen>
+    <dimen name="cell_height">40dp</dimen>
+    <dimen name="row_header_width">55dp</dimen>
+
+    <dimen name="design_bottom_navigation_text_size" tools:override="true">12sp</dimen>
+    <dimen name="design_bottom_navigation_active_text_size" tools:override="true">12sp</dimen>
+    <!--<dimen name="design_bottom_navigation_height" tools:override="true">60dp</dimen>-->
+    <dimen name="design_bottom_navigation_item_icon_size">20dp</dimen>
+
+    <!-- The default letter tile text size -->
+    <dimen name="tile_letter_font_size">17sp</dimen>
+    <!-- The deafult tile size -->
+    <dimen name="letter_tile_size">32dp</dimen>
+    <!-- /LetterTileProvider -->
+</resources>

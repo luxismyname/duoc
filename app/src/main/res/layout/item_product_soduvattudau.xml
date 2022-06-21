@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"
+    android:padding="8dp">
+
+
+    <TextView
+        android:id="@+id/tvMaSanPham"
+        style="@style/AppTheme.TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mã sản phẩm"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintRight_toLeftOf="parent"
+        tools:layout_editor_absoluteY="28dp" />
+    <TextView
+        android:id="@+id/tvTenSanPham"
+        style="@style/AppTheme.TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gas gia dinh xam 12kg"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/tvMaSanPham"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintRight_toLeftOf="parent"
+        tools:layout_editor_absoluteY="28dp" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ctlDVT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTenSanPham">
+
+        <TextView
+            android:id="@+id/tvDVT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:text="Đơn vị tính"
+            android:textSize="@dimen/title_textsize"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintLeft_toRightOf="parent"
+            app:layout_constraintRight_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvDVT2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:text="Đơn vị tính 2"
+            android:textSize="@dimen/title_textsize"
+            app:layout_constraintTop_toBottomOf="@id/tvDVT"
+            app:layout_constraintLeft_toRightOf="parent"
+            app:layout_constraintRight_toLeftOf="parent"/>
+        <TextView
+            android:id="@+id/tvDVT3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:text="Đơn vị tính 3"
+            android:textSize="@dimen/title_textsize"
+            app:layout_constraintTop_toBottomOf="@id/tvDVT2"
+            app:layout_constraintLeft_toRightOf="parent"
+            app:layout_constraintRight_toLeftOf="parent"/>
+
+        <TextView
+            android:id="@+id/tvDV4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:text="Đơn vị tính 4"
+            android:textSize="@dimen/title_textsize"
+            app:layout_constraintTop_toBottomOf="@id/tvDVT3"
+            app:layout_constraintLeft_toRightOf="parent"
+            app:layout_constraintRight_toLeftOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ctlDongGoi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ctlDVT">
+
+        <TextView
+            android:id="@+id/tvDonggoi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:text="Đóng gói"
+            android:textSize="@dimen/title_textsize"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintLeft_toRightOf="parent"
+            app:layout_constraintRight_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvDonggoi2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:text="Đóng gói 2"
+            android:textSize="@dimen/title_textsize"
+            app:layout_constraintTop_toBottomOf="@id/tvDonggoi"
+            app:layout_constraintLeft_toRightOf="parent"
+            app:layout_constraintRight_toLeftOf="parent"/>
+        <TextView
+            android:id="@+id/tvDonggoi3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:text="Đóng gói 3"
+            android:textSize="@dimen/title_textsize"
+            app:layout_constraintTop_toBottomOf="@id/tvDonggoi2"
+            app:layout_constraintLeft_toRightOf="parent"
+            app:layout_constraintRight_toLeftOf="parent"/>
+
+        <TextView
+            android:id="@+id/tvDonggoi4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:text="Đóng gói 4"
+            android:textSize="@dimen/title_textsize"
+            app:layout_constraintTop_toBottomOf="@id/tvDonggoi3"
+            app:layout_constraintLeft_toRightOf="parent"
+            app:layout_constraintRight_toLeftOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ctlKho"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ctlDongGoi">
+
+        <TextView
+            android:id="@+id/tvMSK"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:text="MSK"
+            android:textSize="@dimen/title_textsize"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintLeft_toRightOf="parent"
+            app:layout_constraintRight_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvTenKho"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:text="Tên kho"
+            android:textSize="@dimen/title_textsize"
+            app:layout_constraintTop_toBottomOf="@id/tvMSK"
+            app:layout_constraintLeft_toRightOf="parent"
+            app:layout_constraintRight_toLeftOf="parent"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+

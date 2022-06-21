@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_tongquan"
+            android:icon="@drawable/ic_menu_tongquan"
+            android:title="@string/menu_tongquan" />
+
+        <item
+            android:id="@+id/nav_banhang"
+            android:icon="@drawable/ic_menu_banhang"
+            android:title="@string/menu_banhang" />
+
+        <item
+            android:id="@+id/nav_giaonhan"
+            android:icon="@drawable/ic_menu_banhang"
+            android:title="@string/menu_giaonhan" />
+
+        <item
+            android:id="@+id/nav_giaohangreport"
+            android:icon="@drawable/ic_menu_baocao"
+            android:title="Báo cáo Giao hàng " />
+
+        <item
+            android:id="@+id/nav_giaohangreportchitiet"
+            android:icon="@drawable/ic_menu_baocao"
+            android:title="Báo cáo Giao hàng chi tiết " />
+
+        <item
+            android:id="@+id/nav_thongkenvgh"
+            android:icon="@drawable/ic_menu_baocao"
+            android:title="Thống kê NVGH " />
+
+        <item
+            android:id="@+id/nav_luongnhanvien"
+            android:icon="@drawable/ic_menu_baocao"
+            android:title="Lương nhân viên giao hàng" />
+
+        <item
+            android:id="@+id/nav_khachhang"
+            android:icon="@drawable/ic_menu_khachhang"
+            android:title="@string/menu_khachhang" />
+        <item
+            android:id="@+id/nav_nhanvien"
+            android:icon="@drawable/ic_menu_khachhang"
+            android:title="@string/menu_nhanvien"/>
+        <item
+            android:id="@+id/nav_hanghoa"
+            android:icon="@drawable/ic_menu_hanghoa"
+            android:title="@string/menu_hanghoa" />
+        <item
+            android:id="@+id/nav_vattu"
+            android:icon="@drawable/ic_menu_hanghoa"
+            android:title="@string/menu_vattu" />
+
+        <item
+            android:id="@+id/nav_baocao"
+            android:icon="@drawable/ic_menu_baocao"
+            android:title="@string/menu_baocao" />
+
+<!--        <item-->
+<!--            android:id="@+id/nav_trangthai"-->
+<!--            android:icon="@drawable/ic_menu_baocao"-->
+<!--            android:title="trạng thái" />-->
+
+        <item
+            android:id="@+id/nav_cauhinh"
+            android:icon="@drawable/ic_menu_cauhinh"
+            android:title="@string/menu_cauhinh" />
+
+
+<!--        <item-->
+<!--            android:id="@+id/nav_loaihang"-->
+<!--            android:icon="@drawable/ic_menu_cauhinh"-->
+<!--            android:title="@string/menu_loaihang" />-->
+    </group>
+
+<!--    <item android:title="Communicate">-->
+<!--        <menu>-->
+<!--            <item-->
+<!--                android:id="@+id/nav_share"-->
+<!--                android:icon="@drawable/ic_menu_share"-->
+<!--                android:title="@string/menu_share" />-->
+<!--            <item-->
+<!--                android:id="@+id/nav_send"-->
+<!--                android:icon="@drawable/ic_menu_send"-->
+<!--                android:title="@string/menu_send" />-->
+<!--        </menu>-->
+<!--    </item>-->
+
+</menu>

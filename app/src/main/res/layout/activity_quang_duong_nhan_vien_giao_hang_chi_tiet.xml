@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:fitsSystemWindows="true"
+            android:minHeight="?attr/actionBarSize"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ctLDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorBackgroundGroup"
+        android:padding="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/appBarToolbar">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/ctlFromDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/ctlToDate">
+
+            <EditText
+                android:id="@+id/etFromDate"
+                style="@style/AppTheme.EditText.NoEdit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="4dp"
+                android:text="12/05/2020"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/ctlToDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/ctlFromDate"
+            app:layout_constraintEnd_toStartOf="@id/ctlCustomer">
+
+            <EditText
+                android:id="@+id/etToDate"
+                style="@style/AppTheme.EditText.NoEdit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginStart="4dp"
+                app:layout_constraintTop_toTopOf="parent"
+                android:text="12/05/2020"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/ctlCustomer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="8dp"
+            android:visibility="visible"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/ctlToDate"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <Button
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:id="@+id/btnCustomerView"
+                android:text="Xem"
+                android:layout_marginTop="4dp"
+                style="@style/AppTheme.Button"
+                android:background="@color/colorPrimary"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        app:layout_constraintTop_toBottomOf="@id/ctLDate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/ctlView">
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            style="@style/AppTheme.EditText.NoEdit"
+            android:id="@+id/etChooseEmployee"
+            android:hint="Chọn nhân viên"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/btnView"
+            app:layout_constraintStart_toStartOf="parent"/>
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            style="@style/AppTheme.Button"
+            android:id="@+id/btnView"
+            android:background="@color/colorPrimary"
+            android:layout_marginEnd="8dp"
+            android:text="Xem"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/etChooseEmployee"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <HorizontalScrollView
+        android:id="@+id/horizontal_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scrollbarThumbHorizontal="@drawable/scroll_indicator"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@id/ctlFooter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ctlView">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/ctlHeaderColumn"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/colorBackgroundHeaderColumn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/tvSoCT"
+                style="@style/AppTheme.TextView"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Mã chuyên"
+                android:visibility="visible"
+                android:textColor="@color/colorTilteColumn"
+                android:textSize="@dimen/subtitle_textsize"
+                android:gravity="center"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/tvSLD"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                android:id="@+id/tvSLD"
+                style="@style/AppTheme.TextView"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Lần đi"
+                android:visibility="visible"
+                android:textColor="@color/colorTilteColumn"
+                android:textSize="@dimen/subtitle_textsize"
+                android:gravity="center"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/tvNgayGiao"
+                app:layout_constraintStart_toEndOf="@id/tvSoCT"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+
+            <TextView
+                android:id="@+id/tvNgayGiao"
+                style="@style/AppTheme.TextView"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:gravity="center"
+                android:text="Ngày giao"
+                android:textColor="@color/colorTilteColumn"
+                android:textSize="@dimen/subtitle_textsize"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/tvDCBD"
+                app:layout_constraintStart_toEndOf="@id/tvSLD"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvDCBD"
+                style="@style/AppTheme.TextView"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:gravity="center"
+                android:text="Địa chỉ bắt đầu"
+                android:textColor="@color/colorTilteColumn"
+                android:textSize="@dimen/subtitle_textsize"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/tvDCGH"
+                app:layout_constraintStart_toEndOf="@id/tvNgayGiao"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvDCGH"
+                style="@style/AppTheme.TextView"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:gravity="center"
+                android:text="Địa chỉ giao hàng"
+                android:textColor="@color/colorTilteColumn"
+                android:textSize="@dimen/subtitle_textsize"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/tvQuangDuong"
+                app:layout_constraintStart_toEndOf="@id/tvDCBD"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvQuangDuong"
+                style="@style/AppTheme.TextView"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:gravity="center"
+                android:text="Quãng đường"
+                android:textColor="@color/colorTilteColumn"
+                android:textSize="@dimen/subtitle_textsize"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/tvDCGH"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvListData"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:visibility="visible"
+            tools:listitem="@layout/item_quangduonggiaohangchitiet"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ctlHeaderColumn"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </HorizontalScrollView>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ctlFooter"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/colorBackgroundHeaderColumn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/horizontal_scroll_view">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/ctlTongSoDong"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/titleTongSoDong"
+                style="@style/AppTheme.TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/totalTongNhanVien"
+                android:textColor="@color/colorTilteColumn"
+                android:textSize="@dimen/subtitle_textsize"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvTongNV"
+                style="@style/AppTheme.TextView"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="4dp"
+                android:background="@color/colorBackground"
+                android:gravity="center"
+                android:paddingStart="4dp"
+                android:paddingEnd="4dp"
+                android:text=""
+                android:textColor="@color/colorTilteColumn"
+                android:textSize="@dimen/subtitle_textsize"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/tvTongKM"
+                app:layout_constraintStart_toEndOf="@id/titleTongSoDong"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/tvTongKM"
+                style="@style/AppTheme.TextView"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@color/colorBackground"
+                android:gravity="center"
+                android:paddingStart="4dp"
+                android:paddingEnd="4dp"
+                android:text=""
+                android:textColor="@color/colorTilteColumn"
+                android:textSize="@dimen/subtitle_textsize"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/tvTongNV"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

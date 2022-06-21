@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<!--    <item-->
+<!--        android:id="@+id/menu_laydonhang"-->
+<!--        android:orderInCategory="100"-->
+<!--        app:showAsAction="never"-->
+<!--        android:visible="true"-->
+<!--        android:title="Lấy đơn hàng"/>-->
+
+
+    <item
+        android:id="@+id/menu_capnhattrangthai"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        android:visible="true"
+        android:title="Cập nhật trạng thái"/>
+
+    <item
+        android:id="@+id/menu_xembando"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        android:visible="true"
+        android:title="Xem bản đồ"/>
+
+    <item
+        android:id="@+id/menu_trahang"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        android:visible="true"
+        android:title="Trả hàng"/>
+
+
+    <item
+        android:id="@+id/menu_huydonhang"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        android:visible="true"
+        android:title="Hủy đơn hàng"/>
+
+    <item
+        android:id="@+id/menu_capnhatthongtingiaohang"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        android:visible="true"
+        android:title="Cập nhật thông tin giao hàng"/>
+
+
+    <item
+        android:id="@+id/menu_chitietphieu"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        android:visible="true"
+        android:title="Chi tiết phiếu"/>
+
+
+
+
+</menu>

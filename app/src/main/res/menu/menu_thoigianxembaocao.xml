@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_homnay"
+        android:orderInCategory="100"
+        android:title="Hôm nay"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_homqua"
+        android:orderInCategory="100"
+        android:title="Hôm qua"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_7ngayqua"
+        android:orderInCategory="100"
+        android:title="7 ngày qua"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_tuannay"
+        android:orderInCategory="100"
+        android:title="Tuần này"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_tuantruoc"
+        android:orderInCategory="100"
+        android:title="Tuần trước"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_thangnay"
+        android:orderInCategory="100"
+        android:title="Tháng này"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_thangtruoc"
+        android:orderInCategory="100"
+        android:title="Tháng trước"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_quynay"
+        android:orderInCategory="100"
+        android:title="Quý này"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_namnay"
+        android:orderInCategory="100"
+        android:title="Năm nay"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_luachonkhac"
+        android:orderInCategory="100"
+        android:title="Tùy chọn"
+        app:showAsAction="never" />
+</menu>

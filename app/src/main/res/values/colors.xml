@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ed1b24</color>
+    <color name="colorPrimaryDark">#d63031</color>
+    <color name="colorAccent">#ed1c24</color>
+    <color name="colorPrimaryLight">#ff7675</color>
+    <color name="colorSecondary">#f7ee27</color>
+    <color name="colorPrimaryText">@color/colorPrimary</color>
+    <color name="colorSecondaryText">@android:color/black</color>
+    <color name="colorBackground">@android:color/white</color>
+    <color name="colorBackgroundDark">#CFCFCF</color>
+    <color name="colorBackgroundGroup">@android:color/white</color>
+    <color name="colorTextMenu">@android:color/black</color>
+    <color name="colorToolbarTitle">@android:color/white</color>
+    <!--button light-->
+    <color name="colorButton_background_light_default">@android:color/white</color>
+    <color name="colorButton_background_light_selected">@color/colorPrimary</color>
+    <color name="colorButton_text_light_default">@color/colorPrimary</color>
+    <color name="colorButton_text_light_selected">@android:color/white</color>
+    <!--button light border-->
+    <color name="colorButton_background_lightborder_default">@android:color/white</color>
+    <color name="colorButton_background_lightborder_selected">@color/colorPrimary</color>
+    <color name="colorButton_text_lightborder_default">@color/colorPrimary</color>
+    <color name="colorButton_text_lightborder_selected">@android:color/white</color>
+    <color name="colorButton_border_lightborder_default">@color/colorPrimary</color>
+
+    <!--button light border no change text color-->
+    <color name="colorButton_background_lightborder_no_change_textcolor_default">
+        @android:color/white
+    </color>
+    <color name="colorButton_background_lightborder_no_change_textcolor_selected">#e6e6e6</color>
+    <color name="colorButton_text_lightborder_no_change_textcolor_default">@color/colorPrimary
+    </color>
+    <color name="colorButton_text_lightborder_no_change_textcolor_selected">@color/colorPrimary
+    </color>
+    <color name="colorButton_border_lightborder_no_change_textcolor_default">@color/colorPrimary
+    </color>
+
+    <!--button dark-->
+    <color name="colorButton_background_dark_default">@color/colorPrimary</color>
+    <color name="colorButton_background_dark_selected">@color/colorPrimaryLight</color>
+    <color name="colorButton_background_dark_default_disable">#d1d1d1</color>
+    <color name="colorButton_text_dark_default">@android:color/white</color>
+    <color name="colorButton_text_dark_selected">@android:color/white</color>
+
+    <!--button green-->
+    <color name="colorButton_background_green_default">#17a51d</color>
+    <color name="colorButton_background_green_selected">#6DB36D</color>
+    <color name="colorButton_background_green_default_disable">#d1d1d1</color>
+    <color name="colorButton_text_green_default">@android:color/white</color>
+    <color name="colorButton_text_green_selected">@android:color/white</color>
+
+    <!--button transparent-->
+    <color name="colorButton_background_transparent_default">@android:color/transparent</color>
+    <color name="colorButton_background_transparent_selected">#e6e5e5</color>
+    <color name="colorButton_text_transparent_default">@android:color/black</color>
+    <color name="colorButton_text_transparent_selected">@android:color/black</color>
+    <!--edittext-->
+    <color name="colorEditText_border_default">#C0C0C0</color>
+    <color name="colorEditText_border_selected">#ed1c24</color>
+    <color name="colorEditText_background_default">@android:color/white</color>
+    <color name="colorEditText_background_selected">@android:color/white</color>
+    <color name="colorEditText_text">@android:color/black</color>
+    <color name="colorEditText_background_disable">#ededed</color>
+    <color name="colorEditText_border_disable">#C0C0C0</color>
+    <!--edittext no edit-->
+    <color name="colorEditText_noedit_border_default">#C0C0C0</color>
+    <color name="colorEditText_noedit_border_selected">#C0C0C0</color>
+    <color name="colorEditText_noedit_background_default">@android:color/white</color>
+    <color name="colorEditText_noedit_background_selected">@android:color/white</color>
+    <!--<color name="colorEditText_noedit_text">@android:color/black</color>-->
+    <!--edittext no edit dropdownlist-->
+    <color name="colorEditText_noedit_dropdownlist_border_default">#C0C0C0</color>
+    <color name="colorEditText_noedit_dropdownlist_border_selected">#e4e3e3</color>
+    <color name="colorEditText_noedit_dropdownlist_background_default">#fdfdfd</color>
+    <!--#f7f7f7-->
+    <color name="colorEditText_noedit_dropdownlist_background_selected">#dfdfdf</color>
+    <!--<color name="colorEditText_noedit_dropdownlist_text">@android:color/black</color>-->
+    <!--listview-->
+    <color name="colorListView_background">@android:color/white</color>
+    <color name="colorListView_divider">#C0C0C0</color>
+    <color name="colorLine">#C0C0C0</color>
+    <color name="colorBackgroundColumn">@color/colorSecondary</color>
+    <color name="colorBackgroundSummary">@color/colorPrimary</color>
+    <color name="colorTilteColumn">#494c4e</color>
+    <!--spinner-->
+    <color name="colorSpinner_border_default">#C0C0C0</color>
+    <color name="colorSpinner_border_selected">#e4e3e3</color>
+    <color name="colorSpinner_background_default">#fdfdfd</color>
+    <color name="colorSpinner_background_selected">#dfdfdf</color>
+    <color name="colorSpinner_text">@android:color/black</color>
+    <color name="colorTransparent">@android:color/transparent</color>
+    <!--TabLayout-->
+    <color name="colorTabLayout_primary">@android:color/white</color>
+    <color name="colorTabLayout_accent">@color/colorPrimary</color>
+    <color name="colorTabLayout_text_selected">@color/colorPrimary</color>
+    <color name="colorTabLayout_text_default">#595959</color>
+
+    <color name="colorTrangThai_ChuaHoanThanh">#ed1b24</color>
+    <color name="colorTrangThai_HoanThanh">#008E00</color>
+    <!--CircleImageView-->
+    <color name="colorBorderImage">#FAF7F7</color>
+    <!--Image-->
+    <color name="colorImage_border_default">#F6F6F7</color>
+    <color name="colorImage_border_selected">#C0C0C0</color>
+
+    <color name="icon_item">#727272</color>
+
+    <color name="cell_background_color">#ffffff</color>
+    <color name="header_line_color">#000</color>
+
+    <color name="row_activated">#e0e0e0</color>
+    <color name="colorBackgroundHeaderColumn">#eaeff3</color>
+
+
+    <color name="dashboard_txt_doanhthu">@android:color/holo_green_dark</color>
+    <color name="dashboard_txt_tongdonhang">#e4c62e</color>
+    <color name="dashboard_txt_tongloinhuan">#2093cd</color>
+    <color name="dashboard_txt_tongkhachhang">#ad62a7</color>
+    <color name="dashboard_txt_quytienmat">#f58559</color>
+    <color name="dashboard_txt_quynganhang">#f9a43e</color>
+    <color name="dashboard_txt_tongcuocgoi">#000</color>
+    <color name="Bisque">#ffbf00</color>
+    <color name="colorMenu">#FF000000</color>
+    <color name="actionbar_opacity">#33000000</color>
+    <color name="placeholder_grey">#AAADC4</color>
+    <color name="placeholder_grey_20">#33AAADC4</color>
+
+    <!--trangthai -->
+
+    <color name="danhsachcuocgoi_trangthai_tatca">@android:color/white</color>
+    <color name="danhsachcuocgoi_trangthai_chodonggoi_6">#d2f0cc</color>
+    <color name="danhsachcuocgoi_trangthai_dadonggoi_7">#bbe3b3</color>
+    <color name="danhsachcuocgoi_trangthai_chodangkygiao_8">#ffe4c4</color>
+    <color name="danhsachcuocgoi_trangthai_chogiaonhanlayhang_9">#ffd900</color>
+    <color name="danhsachcuocgoi_trangthai_danggiao_10">#d98832</color>
+    <color name="danhsachcuocgoi_trangthai_dagiao_11">#7a9e0d</color>
+</resources>

@@ -1,0 +1,558 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginBottom="2dp"
+    android:id="@+id/cvMain"
+    android:foreground="?android:attr/selectableItemBackground"
+    app:cardCornerRadius="@dimen/cardview_radius"
+    app:cardElevation="@dimen/cardview_elevation">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ctlMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="4dp">
+
+<!--        android:background="?android:attr/selectableItemBackground"-->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/ctlInfo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:clickable="false"
+            android:focusable="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+            <!--            app:layout_constraintStart_toEndOf="@id/ctlPicture"-->
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cltSoCT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:id="@+id/tvTrangthai"
+                    android:text="abc"
+                    style="@style/AppTheme.TextView"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvSoCT"
+                    style="@style/AppTheme.TextView"
+                    android:text="0123456789123"
+                    android:textColor="#0324fc"
+                    android:textStyle="bold"
+                    android:layout_marginStart="3dp"
+                    app:layout_constraintTop_toBottomOf="@id/tvTrangthai"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/tvSoLuong"/>
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvSoLuong"
+                    style="@style/AppTheme.TextView"
+                    android:text="100kg"
+                    android:gravity="center"
+                    android:textColor="#0324fc"
+                    android:textStyle="bold"
+                    android:layout_marginStart="4dp"
+                    app:layout_constraintTop_toBottomOf="@id/tvTrangthai"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/tvSoCT"
+                    app:layout_constraintEnd_toStartOf="@id/tvThanhTien"/>
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvThanhTien"
+                    style="@style/AppTheme.TextView"
+                    android:text="1000000"
+                    android:gravity="center|end"
+                    android:textColor="#0324fc"
+                    android:textStyle="bold"
+                    android:layout_marginStart="4dp"
+                    app:layout_constraintTop_toBottomOf="@id/tvTrangthai"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/tvSoLuong"
+                    app:layout_constraintEnd_toStartOf="@id/btnMore"/>
+
+                <ImageButton
+                    android:id="@+id/btnMore"
+                    style="@style/AppTheme.Button.Transparent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:gravity="right"
+                    android:visibility="visible"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/tvThanhTien"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_more" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ctlInfo1"
+                app:layout_constraintTop_toBottomOf="@id/cltSoCT"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                    <ImageView
+                        android:id="@+id/imgNgay"
+                        style="@style/AppTheme.TextView"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_marginStart="3dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@id/tvNgay"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/ic_calendar_chon_ngay"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tvNgay"
+                        style="@style/AppTheme.TextView"
+                        android:text="01/01/2021"
+                        android:layout_marginStart="4dp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/imgNgay"
+                        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+
+                
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/ctlKhachHang"
+                android:layout_marginTop="4dp"
+                android:layout_marginStart="3dp"
+                app:layout_constraintTop_toBottomOf="@id/ctlInfo1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <ImageView
+                    android:id="@+id/imgKhachHang"
+                    style="@style/AppTheme.TextView"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/tvTenKH"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_customer"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvTenKH"
+                    style="@style/AppTheme.TextView"
+                    android:layout_marginStart="4dp"
+                    android:text="Công Ty TNHH CNTT Bông Mai"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/imgKhachHang"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/ctlDiaChi"
+                android:layout_marginTop="4dp"
+                android:layout_marginStart="3dp"
+                app:layout_constraintTop_toBottomOf="@id/ctlKhachHang"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+
+                <ImageView
+                    android:id="@+id/imgDiaChi"
+                    style="@style/AppTheme.TextView"
+                    android:layout_width="16dp"
+                    android:layout_height="18dp"
+                    android:textColor="#0324fc"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/tvDiaChi"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_placeholder2"/>
+
+                <TextView
+                    android:id="@+id/tvDiaChi"
+                    style="@style/AppTheme.TextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:text="11 Duong 21D, P.Binh Tri Dong B, Q.Binh Tan"
+                    android:textColor="#0324fc"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/imgDiaChi"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ctlInfo2"
+                android:visibility="gone"
+                android:layout_marginTop="4dp"
+                android:layout_marginStart="3dp"
+                app:layout_constraintTop_toBottomOf="@id/ctlDiaChi"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/ctlGioGiao"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toStartOf="@id/ctlNVNhapLieu"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:id="@+id/imgGioGiao"
+                        style="@style/AppTheme.TextView"
+                        android:layout_width="16dp"
+                        android:layout_height="18dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@id/tvGioGiao"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/ic_clock"/>
+
+                    <TextView
+                        android:id="@+id/tvGioGiao"
+                        style="@style/AppTheme.TextView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="4dp"
+                        android:text="11h59m"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/imgGioGiao"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/ctlNVNhapLieu"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/ctlGioGiao"
+                    app:layout_constraintTop_toTopOf="parent">
+                    <ImageView
+                        android:id="@+id/imgEmployeeID"
+                        style="@style/AppTheme.TextView"
+                        android:layout_width="16dp"
+                        android:layout_height="18dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toStartOf="@id/tvEmployee"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/ic_employee"/>
+
+                    <TextView
+                        android:id="@+id/tvEmployee"
+                        style="@style/AppTheme.TextView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="3dp"
+                        android:text="TIHA"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/imgEmployeeID"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/ctlNhanVienGiaoHang"
+                android:layout_marginTop="4dp"
+                android:layout_marginStart="3dp"
+                app:layout_constraintTop_toBottomOf="@id/ctlInfo2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <TextView
+                    android:id="@+id/imgDriver"
+                    style="@style/AppTheme.TextView"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/giaonhan_nguoigiao"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/tvNVGH"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvNVGH"
+                    style="@style/AppTheme.TextView"
+                    android:text="Giao Hàng 1"
+                    android:layout_marginStart="4dp"
+                    app:layout_constraintStart_toEndOf="@id/imgDriver"
+                    app:layout_constraintEnd_toStartOf="@id/imgWeight"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+
+                <ImageView
+                    android:id="@+id/imgWeight"
+                    style="@style/AppTheme.TextView"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/tvTrongLuong"
+                    app:layout_constraintStart_toEndOf="@id/tvNVGH"
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
+
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvTrongLuong"
+                    style="@style/AppTheme.TextView"
+                    android:text="1000kg"
+                    android:layout_marginStart="4dp"
+                    app:layout_constraintStart_toEndOf="@id/imgWeight"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/ctlTheTich"
+                android:layout_marginTop="4dp"
+                android:layout_marginStart="3dp"
+                app:layout_constraintTop_toBottomOf="@id/ctlNhanVienGiaoHang"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <TextView
+                    android:id="@+id/imgTheTich"
+                    style="@style/AppTheme.TextView"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/giaonhan_thetich"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/tvTheTich"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvTheTich"
+                    style="@style/AppTheme.TextView"
+                    android:text="0.0"
+                    android:layout_marginStart="4dp"
+                    app:layout_constraintStart_toEndOf="@id/imgTheTich"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/ctlXe"
+                android:layout_marginTop="4dp"
+                android:layout_marginStart="3dp"
+                app:layout_constraintTop_toBottomOf="@id/ctlTheTich"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ctlTaiXe"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/ctlSoXe">
+
+                    <ImageView
+                        android:id="@+id/imgTrans"
+                        style="@style/AppTheme.TextView"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@id/tvTaixe"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/driver"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tvTaixe"
+                        style="@style/AppTheme.TextView"
+                        android:text="TÀI XẾ 1"
+                        android:layout_marginStart="4dp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/imgTrans"
+                        app:layout_constraintEnd_toEndOf="parent"/>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ctlSoXe"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/ctlTaiXe"
+                    app:layout_constraintEnd_toEndOf="parent">
+
+                    <ImageView
+                        android:id="@+id/imgTruck"
+                        style="@style/AppTheme.TextView"
+                        android:layout_width="18dp"
+                        android:layout_height="16dp"
+                        android:layout_marginStart="4dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@id/tvSoXe"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/truck"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tvSoXe"
+                        style="@style/AppTheme.TextView"
+                        android:text="Số xe"
+                        android:layout_marginStart="4dp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/imgTruck"
+                        app:layout_constraintEnd_toEndOf="parent"/>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/ctlNgayGioGiao"
+                android:layout_marginTop="4dp"
+                app:layout_constraintTop_toBottomOf="@id/ctlXe"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <ImageView
+                    android:id="@+id/imgTimeDeliver"
+                    style="@style/AppTheme.TextView"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginStart="4dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/tvNgayGioGiao"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                   />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    style="@style/AppTheme.TextView"
+                    android:layout_marginStart="4dp"
+                    android:id="@+id/tvNgayGioGiao"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/imgTimeDeliver"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/ctlGhiChu"
+                android:layout_marginTop="4dp"
+                app:layout_constraintTop_toBottomOf="@id/ctlNgayGioGiao"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <ImageView
+                    android:id="@+id/imgNotes"
+                    style="@style/AppTheme.TextView"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginStart="4dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/tvGhiChu"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/notes"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    style="@style/AppTheme.TextView"
+                    android:id="@+id/tvGhiChu"
+                    android:layout_marginStart="4dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/imgNotes"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:id="@+id/tvLine1"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/colorLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ctlMain" />
+</androidx.cardview.widget.CardView>

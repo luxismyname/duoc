@@ -1,0 +1,453 @@
+<resources>
+    <string name="app_name">Duoc Tong</string>
+    <string name="app_hotline">0913 100 377</string>
+    <string name="app_website">www.tiha.vn</string>
+    <string name="app_website_customer">www.tiha.vn</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">TiHa</string>
+    <string name="nav_header_subtitle">support@tiha.vn</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="app_tieudeform">TIHA.VN -</string>
+    <string name="login_txt_servernamecty">demo.tiha.vn</string>
+    <!--    Menu-->
+    <string name="menu_banhang">Đơn hàng</string>
+    <string name="menu_nhanvien">Nhân viên</string>
+    <string name="menu_khachhang">Khách hàng</string>
+    <string name="menu_hanghoa">Sản phẩm</string>
+    <string name="menu_vattu">Vật tư</string>
+    <string name="menu_baocao">Báo cáo</string>
+    <string name="menu_tongquan">Tổng quan</string>
+    <string name="menu_giaonhan">Giao nhận</string>
+    <string name="menu_cauhinh">Cấu hình</string>
+    <string name="menu_loaihang">Loại hàng</string>
+
+    <string name="btn_filter">Lọc</string>
+    <string name="tap_to_reload">Nhấn để tải lại</string>
+    <string name="error_msg">Rất tiếc! không thể tải dữ liệu</string>
+    <string name="btn_retry">Thử lại</string>
+    <!--    Error-->
+    <string name="error_msg_unknown">Đã xảy ra lỗi không mong muốn</string>
+    <string name="error_msg_no_internet">Vui lòng kiểm tra kết nối và thử lại.</string>
+    <string name="title_error_msg">LỖI</string>
+    <string name="title_not_error_msg">Thông báo</string>
+    <!--    Dialog-->
+    <string name="dialog_btn_ok">ĐỒNG Ý</string>
+    <string name="dialog_btn_cancel">HỦY</string>
+    <string name="map_tieudeform">Bản đồ</string>
+    <string name="map_et_hint_origin">Điểm đi</string>
+    <string name="map_et_hint_destination">Điểm đến</string>
+    <string name="google_maps_key">AIzaSyBu86Xy64zcwMiKCLbsDbjPHQ9iG_5TBh0</string>
+    <string-array name="letter_tile_colors">
+        <item>#f16364</item>
+        <item>#67bf74</item>
+        <item>#2093cd</item>
+        <item>#696969</item>
+        <item>#f58559</item>
+        <item>#f9a43e</item>
+        <item>#e4c62e</item>
+        <item>#59a2be</item>
+        <item>#ad62a7</item>
+        <item>#8775B9</item>
+        <item>#97E8C6</item>
+        <item>#FFB57B</item>
+        <item>#7ABFE7</item>
+    </string-array>
+
+
+    <!--    Chon kho list-->
+    <string name="chonkholist_et_hint_timkiem">Tìm kiếm kho</string>
+    <string name="chonkholist_btn_txt_apdung">ÁP DỤNG</string>
+    <string name="chonkholist_tieudeform">Chọn kho</string>
+
+    <string name="chonsplist_tieudeform">Chọn sản phẩm</string>
+    <!--    Chon loai hang list-->
+    <string name="chonloaihanglist_btn_txt_apdung">ÁP DỤNG</string>
+    <string name="chonloaihanglist_et_hint_timkiem">Tìm kiếm loại hàng</string>
+    <string name="chonloaihanglist_tieudeform">Chọn loại hàng</string>
+    <!--    Report-->
+    <string name="report_col_nhomkhachhang">Nhóm KH</string>
+    <string name="report_col_makhachhang">Mã khách hàng</string>
+    <string name="report_col_tenkhachhang">Tên khách hàng</string>
+    <string name="nav_title_cuocgoi">Cuộc gọi</string>
+    <string name="nav_title_khachhang">Khách hàng</string>
+    <string name="nav_title_donhang">Đơn hàng</string>
+    <string name="nav_title_baocao">Báo cáo</string>
+    <string name="nav_title_more">Thêm</string>
+    <string name="cauhinh_et_hint_sodienthoai">Nhập số điện thoại...</string>
+    <string name="dialog_nhapsodienthoai">Nhập số điện thoại</string>
+    <string name="baocao_tieudeform">BÁO CÁO</string>
+    <string name="dashboard_tieudeform">DASHBOARD</string>
+    <string name="dashboard_txt_doanhthu">Doanh thu</string>
+    <string name="dashboard_txt_tongdonhang">Số đơn hàng</string>
+    <string name="dashboard_txt_tongloinhuan">Lãi gộp</string>
+    <string name="dashboard_txt_tongkhachhang">Lượt khách</string>
+    <string name="dashboard_txt_quytienmat">Quỹ tiền mặt</string>
+    <string name="dashboard_txt_quynganhang">Quỹ ngân hàng</string>
+    <string name="colTenHang">Tên sản phẩm</string>
+    <string name="colSoLuongXuat">SL xuất</string>
+    <string name="colSoLuongTon">SL tồn</string>
+    <string name="totalTongSanPham">Tổng sản phẩm</string>
+    <string name="dialog_nhapthoigianbaocao">Chọn ngày xem</string>
+    <string name="thongkechitietnhaphang_edittext_hint_timkiem">Tìm kiếm phiếu nhập</string>
+    <string name="colNgay">Ngày</string>
+    <string name="colSoCT">Số phiếu</string>
+    <string name="colTenKhachHang">Tên khách hàng</string>
+    <string name="colDiaChi">Địa chỉ</string>
+    <string name="colDDBH">Nhân viên bán hàng</string>
+    <string name="colTenKho">Kho</string>
+    <string name="colDVT">ĐVT</string>
+    <string name="colSoLuong">Số lượng</string>
+    <string name="colDonGia">Đơn giá</string>
+    <string name="colThanhTien">Thành tiền</string>
+    <string name="colTongSoDong">Tổng số dòng</string>
+    <string name="totalTongKhachHang">Tổng khách hàng</string>
+    <string name="thongkecongno_edittext_hint_timkiem">Tìm kiếm khách hàng</string>
+    <string name="colPhaiThu">Phải thu</string>
+    <string name="colPhaiTra">Phải trả</string>
+    <string name="colNhomKhachHang">Nhóm khách hàng</string>
+    <string name="colMaKhachHang">Mã khách hàng</string>
+    <string name="colDauKy">Đầu kỳ</string>
+    <string name="colPSNhap">Nhập</string>
+    <string name="colPSXuat">Xuất</string>
+    <string name="colPSThu">Thu</string>
+    <string name="colPSChi">Chi</string>
+    <string name="colCuoiKy">Cuối kỳ</string>
+    <string name="colNoCuoiKy">Nợ cuối kỳ</string>
+    <string name="doanhsobanhangtheocn_edittext_hint_timkiem">Tìm kiếm chi nhánh</string>
+    <string name="colChiNhanh">Chi nhánh</string>
+    <string name="congno_et_hint_timkiem">Tìm kiếm khách hàng</string>
+    <string name="totalTongChiNhanh">Tổng chi nhánh</string>
+    <string name="doanhsobanhangtheokh_edittext_hint_timkiem">Tìm kiếm khách hàng</string>
+    <string name="doanhsobanhangtheoddbh_edittext_hint_timkiem">Tìm kiếm nhân viên</string>
+    <string name="colTenNhanVien">Tên nhân viên</string>
+    <string name="totalTongNhanVien">Tổng</string>
+    <string name="thongkebanhang_edittext_hint_timkiem">Tìm kiếm phiếu xuất</string>
+    <string name="colSoTien">Số tiền</string>
+    <string name="colTongSoPhieu">Tổng số phiếu</string>
+    <string name="thongkenhaphang_edittext_hint_timkiem">Tìm kiếm phiếu nhập</string>
+    <string name="colLoaiPhieu">Loại phiếu</string>
+    <string name="colSoPhieu">Số phiếu</string>
+    <string name="colSoLuongNhap">Số lượng nhập</string>
+    <string name="totalTongSoDong">Tổng số dòng</string>
+    <string name="thongkecuocgoi_edittext_hint_timkiem">Tìm kiếm cuộc gọi</string>
+    <string name="colThoiGianNhan">TG nhận</string>
+    <string name="colDienThoai">Điện thoại</string>
+    <string name="colSanPhamMua">Sản phẩm mua</string>
+    <string name="colTienHang">Tiền hàng</string>
+    <string name="colTienThu">Tiền thu</string>
+    <string name="totalTongCuocGoi">Tổng số cuộc gọi</string>
+    <string name="thongketonnuoc_edittext_hint_timkiem">Tìm kiếm sản phẩm</string>
+    <string name="colMaHang">Mã sản phẩm</string>
+    <string name="colTonKhoDauKy">Đầu kỳ</string>
+    <string name="colTonKhoPSNhap">Nhập</string>
+    <string name="colTonKhoPSXuat">Xuất</string>
+    <string name="colTonKhoPSChuyenDen">Chuyển đến</string>
+    <string name="colTonKhoPSChuyenDi">Chuyển đi</string>
+    <string name="colTonKhoCuoiKy">Cuối kỳ</string>
+    <string name="colNuoc">Nước</string>
+    <string name="colVo">Vỏ</string>
+    <string name="colPhaiThuDK">Phải thu ĐK</string>
+    <string name="colPhaiTraDK">Phải trả ĐK</string>
+    <string name="colPhaiThuCK">Phải thu CK</string>
+    <string name="colPhaiTraCK">Phải trả CK</string>
+    <string name="title_button_clear">Xóa</string>
+    <!--    Nhap so luong-->
+    <string name="nhapsoluong_txt_masanpham">Mã sản phẩm</string>
+    <string name="nhapsoluong_txt_tensanpham">Tên sản phẩm</string>
+    <string name="nhapsoluong_txt_donvitinh">Đơn vị tính</string>
+    <string name="nhapsoluong_txt_tonkho">Tồn kho</string>
+    <string name="nhapsoluong_txt_soluong">Số lượng</string>
+    <string name="nhapsoluong_txt_dongia">Đơn giá</string>
+    <string name="nhapsoluong_txt_chietkhau">Chiết khấu</string>
+    <string name="nhapsoluong_txt_thanhtien">Thành tiền</string>
+    <string name="nhapsoluong_txt_ghichu">Ghi chú</string>
+    <string name="nhapsoluong_tieudeform">Nhập số lượng sản phẩm</string>
+
+    <string name="giaohangform">Phiếu giao hàng</string>
+    <!--    Login-->
+    <string name="login_btn_dangnhap">ĐĂNG NHẬP</string>
+    <string name="login_et_hint_matkhau">Mật khẩu</string>
+    <string name="login_txt_matkhau">Mật khẩu</string>
+    <string name="login_et_hint_tendangnhap">Tên đăng nhập</string>
+    <string name="login_txt_tendangnhap">Tên đăng nhập</string>
+    <!--    Phieu xuat-->
+    <string name="phieubansi_et_hint_timkiem">Tìm kiếm sản phẩm</string>
+    <string name="phieubansi_txt_tongsl">Tổng số lượng:</string>
+    <string name="phieubansi_txt_tongtienhang">Tổng tiền hàng:</string>
+    <string name="phieubansi_txt_tongchietkhau">Tổng chiết khấu:</string>
+    <string name="phieubansi_txt_khachhang">Tên khách hàng</string>
+    <string name="phieubansi_txt_ddnguoimua">Người mua</string>
+    <string name="phieubansi_et_hint_khachhang">Chọn khách hàng</string>
+    <string name="phieubansi_et_hint_nhapkhachhang">Nhập khách hàng</string>
+    <string name="phieubansi_et_hint_nhapKH">Nhập tên khách hàng</string>
+    <string name="phieubansi_txt_nvbh">Nhân viên bán hàng</string>
+    <string name="phieubansi_et_hint_nvbg">Chọn nhân viên bán hàng</string>
+    <string name="phieubansi_txt_nvgh">Nhân viên giao hàng</string>
+    <string name="phieubansi_et_hint_nvgh">Chọn nhân viên giao hàng</string>
+    <string name="phieubansi_txt_diachi">Địa chỉ</string>
+    <string name="phieubansi_et_hint_diachi">Nhập địa chỉ</string>
+    <string name="phieubansi_txt_dienthoai">Điện thoại</string>
+    <string name="phieubansi_et_hint_dienthoai">Nhập điện thoại</string>
+    <string name="phieubansi_txt_ghichu">Ghi chú</string>
+    <string name="phieubansi_et_hint_ghichu">Nhập ghi chú</string>
+    <string name="phieubansi_txt_tongtientt">Tổng cộng:</string>
+    <string name="phieubansi_btn_txt_luu">LƯU</string>
+    <string name="phieubansi_txt_kho">Kho</string>
+    <string name="phieubansi_et_hint_kho">Chọn kho</string>
+    <string name="phieubansi_txt_soct">Số phiếu</string>
+    <string name="phieubansi_et_hint_soct">Mã tự sinh</string>
+    <string name="phieubansi_txt_ngay">Ngày</string>
+    <!--    Phieu ban si detail-->
+    <string name="phieubansidetail_tieudeform">Chi tiết đơn hàng</string>
+    <!--    Phieu ban si detail general ino-->
+    <string name="phieubansi_detail_general_info_ngay">Ngày</string>
+
+    <!--    Them khach hang-->
+    <string name="themkhachhang_et_hint_timkiem">Tìm tên khách hàng, điện thoại, địa chỉ,...</string>
+    <string name="themkhachhang_et_hint_makhachhang">Mã tự động sinh</string>
+    <string name="themkhachhang_et_hint_tenkhachhang">Tên khách hàng</string>
+    <string name="themkhachhang_txt_phone">Số điện thoại 1</string>
+    <string name="themkhachhang_txt_dtdd">Số điện thoại 2</string>
+    <string name="themkhachhang_txt_sdt1">Số điện thoại 3</string>
+    <string name="themkhachhang_txt_sdt2">Số điện thoại 4</string>
+    <string name="themkhachhang_et_diachiso">Địa chỉ số</string>
+    <string name="themkhachhang_txt_diachiso">Địa chỉ số</string>
+    <string name="themkhachhang_txt_phuongxa">Phường/Xã</string>
+    <string name="themkhachhang_txt_quanhuyen">Quận/Huyện</string>
+    <string name="themkhachhang_txt_tinhthanhpho">Tỉnh/TP</string>
+    <string name="themkhachhang_txt_sanphamsudung">Sản phẩm sử dụng</string>
+    <string name="themkhachhang_txt_nhomkhachhang">Nhóm khách hàng</string>
+    <string name="themkhachhang_txt_chinhanh">Chi nhánh</string>
+    <string name="themkhachhang_txt_ddbh">Đại diện bán hàng</string>
+    <string name="themkhachhang_txt_nocu">Nợ cũ</string>
+    <string name="themkhachhang_txt_vido">Vĩ độ</string>
+    <string name="themkhachhang_txt_kinhdo">Kinh độ</string>
+    <string name="themkhachhang_txt_dacdiemkhachhang">Ghi chú</string>
+    <string name="themkhachhang_txt_huongcotgia">Hưởng cột giá</string>
+    <string name="themkhachhang_txt_banggia">Bảng giá</string>
+    <string name="themkhachhang_tieudeform">THÊM KHÁCH HÀNG</string>
+    <string name="themkhachhang_txt_duong">Đường</string>
+
+    <!--    Them nhan vien-->
+    <string name="themnhanvien_et_hint_timkiem">Tìm tên nhân viên, điện thoại, địa chỉ,...</string>
+    <string name="themnhanvien_et_hint_manhanvien">Mã tự động sinh</string>
+    <string name="themnhanvien_et_hint_tennhanvien">Tên nhân viên</string>
+    <string name="themnhanvien_txt_phone">Số điện thoại</string>
+    <string name="themnhanvien_txt_dtdd">Số điện thoại 2</string>
+    <string name="themnhanvien_txt_sdt1">Số điện thoại 3</string>
+    <string name="themnhanvien_txt_sdt2">Số điện thoại 4</string>
+    <string name="themnhanvien_gioitinh">Giới tính</string>
+    <string name="themnhanvien_gioitinh_nam">Nam</string>
+    <string name="themnhanvien_gioitinh_nu">Nữ</string>
+    <string name="themnhanvien_et_diachiso">Địa chỉ số</string>
+    <string name="themnhanvien_txt_diachiso">Địa chỉ số</string>
+    <string name="themnhanvien_txt_phuongxa">Phường/Xã</string>
+    <string name="themnhanvien_txt_email">Email nhân viên</string>
+    <string name="themnhanvien_txt_bophan">Bộ phận nhân viên</string>
+    <string name="trangthai_txt">Danh sách trạng thái</string>
+    <string name="themnhanvien_txt_vitri">Nhập vị trí</string>
+    <string name="themnhanvien_txt_tinhthanhpho">Tỉnh/TP</string>
+    <string name="themnhanvien_tieudeform">THÊM NHÂN VIÊN</string>
+    <string name="themnhanvien_txt_duong">Đường</string>
+    <string name="themnhanvien_txt_cmnd_passport">Nhập CMND/Passport</string>
+    <string name="themnhanvien_txt_bhxh">Nhập số bảo hiểm xã hội</string>
+    <string name="themnhanvien_txt_bhyt">Nhập số bảo hiểm y tế</string>
+    <!--    Danh sach khach hang-->
+    <string name="supplierlist_et_hint_timkiem">Tìm kiếm khách hàng</string>
+    <string name="supplierlist_tieudeform">Danh sách khách hàng</string>
+    <!--    Danh sach hang hoa-->
+    <string name="productlist_et_hint_timkiem">Tìm kiếm sản phẩm</string>
+    <string name="productlist_tieudeform">Danh sách sản phẩm</string>
+    <!--    Danh sach nhom khach hang-->
+    <string name="nhomkhachhang_et_hint_timkiem">Tìm kiếm nhóm khách hàng</string>
+    <string name="nhomkhachhang_tieudeform">Nhóm khách hàng</string>
+    <!--    Danh sach nhan vien-->
+    <string name="employeelist_et_hint_timkiem">Tìm kiếm nhân viên</string>
+    <string name="employeelist_tieudeform">Danh sách nhân viên</string>
+    <string name="fragment_ThongtinNhanvien_detail">Thông tin nhân viên</string>
+    <!--    Danh sach dia chi-->
+    <string name="danhmuctinh_et_hint_timkiem">Tìm kiếm địa chỉ</string>
+    <string name="danhmuctinh_et_hint_timkiem_nhanvien">Tìm kiếm nhân viên</string>
+    <string name="duong_tieudeform">Danh mục đường</string>
+    <string name="phuong_tieudeform">Danh mục phường/xã</string>
+    <string name="quan_tieudeform">Danh mục quận/huyện</string>
+    <string name="tinh_tieudeform">Danh mục tỉnh/TP</string>
+    <string name="diachi_tieudeform">Chọn địa chỉ</string>
+    <!--    Chi tiet bao cao-->
+    <string name="chitietbaocao_tieudeform">Chọn báo cáo</string>
+    <!--    Quet ma vach-->
+    <string name="title_flash_off">Đã tắt đèn Flash</string>
+    <string name="title_flash_on">Đã bật đèn Flash</string>
+    <string name="phieubansilist_et_hint_timkiem">Tìm kiếm phiếu xuất</string>
+
+    <!--    Sunmi printer-->
+    <!--instruction-->
+    <string name="toast_1">Transaction print,use the AIDL mode!</string>
+    <string name="toast_2">The service has been disconnected!</string>
+    <string name="toast_3">Bluetooth device is unavailable</string>
+    <string name="toast_4">Bluetooth device not detected. Please open Bluetooth!</string>
+    <string name="toast_5">Not Found InnterPrinter!</string>
+    <string name="toast_6">Bluetooth connect failed!</string>
+    <string name="toast_7"> Only a single Qr code is printed for the AIDL mode</string>
+    <string name="toast_8">Now QrCode size must be less than 7!</string>
+    <string name="toast_9">BarCode type or conent error!</string>
+    <string name="toast_10">Please set the printer as black label mode!</string>
+    <string name="noresult_msg">Không tìm thấy kết quả</string>
+    <string name="phieubansilist_txt_tongsl">Tổng số phiếu:</string>
+    <string name="phieubansilist_txt_tongtien">Tổng tiền:</string>
+    <!--    Dialog filter-->
+    <string name="dialog_filter_btn_thietlaplai">Đặt lại</string>
+    <string name="dialog_filter_txt_fromdate">Từ ngày</string>
+    <string name="dialog_filter_txt_todate">Đến ngày</string>
+    <string name="dialog_filter_btn_apdung">ÁP DỤNG</string>
+    <string name="dialog_filter_txt_kho">Kho</string>
+    <string name="dialog_filter_et_hint_kho">Chọn kho</string>
+    <!--    Danh sach loai hang -->
+    <string name="loaihanglist_et_hint_timkiem">Tìm kiếm loại hàng</string>
+    <string name="loaihanglist_tieudeform">Loại hàng</string>
+    <!--    Them loai hang-->
+    <string name="dialog_themloaihang_txt_maloai">Mã loại</string>
+    <string name="dialog_themloaihang_txt_tenloai">Tên loại</string>
+    <string name="dialog_themloaihang_tieudeform">Thêm loại hàng</string>
+    <string name="dialog_capnhattrangthai_tieudeform">Cập nhật trạng thái</string>
+    <!--    Preview Image-->
+    <string name="previewpicture_tieudeform">Hình ảnh</string>
+    <!--    Them san pham-->
+    <string name="themsanpham_txt_masanpham">Mã sản phẩm</string>
+    <string name="themsanpham_et_hint_masanpham">Mã tự sinh</string>
+    <string name="themsanpham_txt_tensanpham">Tên sản phẩm</string>
+    <string name="themsanpham_et_hint_tensanpham">Tên sản phẩm</string>
+    <string name="themsanpham_txt_gianhap">Giá nhập</string>
+    <string name="themsanpham_txt_giabanle">Giá C1 (Bán lẻ)</string>
+    <string name="themsanpham_txt_giabansi">Giá C2 (Bán sỉ)</string>
+    <string name="themsanpham_txt_giabanno">Giá C3 (Bán nợ)</string>
+    <string name="themsanpham_txt_nhomsanpham">Loại hàng</string>
+    <string name="themsanpham_et_hint_nhomloaihang">Chọn loại hàng</string>
+    <string name="themsanpham_txt_diengiai">Diễn giải</string>
+    <string name="themsanpham_txt_mavach">Mã vạch</string>
+    <string name="themsanpham_et_hint_mavach">Mã vạch</string>
+    <string name="themsanpham_txt_donvitinh">Đơn vị tính</string>
+    <string name="themsanpham_txt_donggoi">Đóng gói</string>
+    <string name="themsanpham_txt_donvitinh2">Đơn vị tính 2</string>
+    <string name="themsanpham_txt_donvitinh3">Đơn vị tính 3</string>
+    <string name="themsanpham_txt_donvitinh4">Đơn vị tính 4</string>
+    <string name="themsanpham_txt_donggoi2">Đóng gói 2</string>
+    <string name="themsanpham_txt_donggoi3">Đóng gói 3</string>
+    <string name="themsanpham_txt_donggoi4">Đóng gói 4</string>
+    <string name="themsanpham_tieudeform">Thêm sản phẩm</string>
+    <string name="themsanpham_txt_loaisanpham">Loại</string>
+    <string name="themsanpham_txt_soluongtoida">Số lượng tối đa</string>
+    <string name="themsanpham_txt_soluongtoithieu">Số lượng tối thiểu</string>
+    <string name="themsanpham_txt_thuesuat">Thuế suất (%)</string>
+    <string name="themsanpham_txt_nhacungcap">Nhà cung cấp</string>
+    <!--    Config -->
+    <string name="config_txt_khachhangmacdinh">Khách hàng mặc định</string>
+    <string name="config_txt_Company">Tên công ty</string>
+    <string name="config_txt_address">Địa chỉ</string>
+    <string name="config_txt_tel">Điện thoại</string>
+    <string name="config_button_title_save">LƯU</string>
+    <string name="config_tieudeform">Cấu hình</string>
+    <string name="config_txt_luuy">Lưu ý</string>
+    <!--   Danh sach kho-->
+    <string name="kholist_et_hint_timkiem">Tìm kiếm kho</string>
+    <string name="kholist_tieudeform">Kho</string>
+    <string name="TrangThailist_tieudeform">Cập nhật trạng thái</string>
+    <string name="phieubansi_detail_general_info_soct">Số phiếu</string>
+    <string name="phieubansi_detail_general_info_makhachhang">Mã khách hàng</string>
+    <string name="phieubansi_detail_general_info_tenkhachhang">Khách hàng</string>
+    <string name="phieubansi_detail_general_info_diachi">Địa chỉ</string>
+    <string name="phieubansi_detail_general_info_dienthoai">Điện thoại</string>
+    <string name="phieubansi_detail_general_info_ghichu">Ghi chú</string>
+    <string name="phieubansi_detail_general_info_kho">Kho</string>
+    <string name="phieubansi_detail_general_info_NVBH">Nhân viên bán hàng</string>
+    <string name="phieubansi_detail_general_info_NVGH">Nhân viên giao hàng</string>
+    <string name="phieubansi_detail_general_info_TongTien">Tổng tiền</string>
+    <string name="fragment_phieubansi_detail_generalinfo_title">Thông tin phiếu</string>
+    <string name="fragment_phieubansi_detail_chitietphieuxuat_title">Chi tiết phiếu xuất</string>
+
+    <!--Update Sản phẩm -->
+    <string name="activity_update_product_title">Thông tin chung</string>
+    <string name="update_Product_tieudeform">Cập nhật sản phẩm</string>
+    <string name="fragment_Thongtinsanpham_detail">Thông tin sản phẩm</string>
+
+
+    <!--Update khách hàng -->
+    <string name="themkhachhang_MaKH">Mã khách hàng</string>
+    <string name="themkhachhang_phone">Số điện thoại</string>
+    <string name="themkhachhang_diachi">Địa chỉ</string>
+    <string name="updateKhachHang_tieudeform">Cập nhật thông tin</string>
+    <string name="fragment_ThongtinKhachHang_detail">Thông tin khách hàng</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="chitiet_sanpham">Sản phẩm</string>
+
+    <!--    Chi tiết đơn hàng-->
+    <string name="order_detail_information">Chi tiết đơn hàng</string>
+
+    <!--    Popup Đường -->
+    <string name="popup_them_moi_duong">Thêm mới đường</string>
+    <string name="popup_ten_duong_viet_tat">Tên đường viết tắt</string>
+    <string name="popup_chi_tiet_ten_duong">Chi tiết tên đường</string>
+    <string name="popup_ma_tinh">Mã tỉnh</string>
+    <string name="popup_ma_quan">Mã Quận</string>
+    <string name="button_luu">Lưu</string>
+    <string name="button_huy">Hủy</string>
+
+    <!--    Popup Phường -->
+    <string name="popup_them_moi_phuong">Thêm mới phường</string>
+    <string name="popup_ten_phuong_viet_tat">Tên phường viết tắt</string>
+    <string name="popup_chi_tiet_ten_phuong">Chi tiết tên phường</string>
+    <!--    Popup Quận -->
+    <string name="popup_them_moi_quan">Thêm mới quận</string>
+    <string name="popup_ten_quan_viet_tat">Tên quận viết tắt</string>
+    <string name="popup_chi_tiet_ten_quan">Chi tiết tên quận</string>
+
+    <!--    Popup Tỉnh/Thành phố -->
+    <string name="popup_them_moi_tinh">Thêm mới Tỉnh/Thành Phố</string>
+    <string name="popup_ten_tinh_viet_tat">Tên Tỉnh/Thành Phố viết tắt</string>
+    <string name="popup_chi_tiet_ten_tinh">Chi tiết tên Tỉnh/Thành Phố</string>
+
+    <!--    Số dư vật tư-->
+    <string name="soduvattu_list_title">Danh sách số dư vật tư</string>
+    <string name="soduvattu_them_title">Thêm số dư vật tư</string>
+    <string name="soduvattu_mavt">Mã vật tư</string>
+    <string name="soduvattu_kho">Kho</string>
+    <string name="soduvattu_ngay">Ngày</string>
+    <string name="soduvattu_sanpham">Sản phẩm</string>
+    <string name="soduvattu_soluongthuc">Số lượng thực</string>
+    <string name="soduvattu_dongiathuc">Đơn giá thực</string>
+    <string name="soduvattu_thanhtien">Thành tiền</string>
+    <string name="soduvattu_hint_timkiem">Tìm kiếm vật tư</string>
+    <string name="soduvattu_tieudeform">Chi tiết số dư vật tư</string>
+    <string name="fragment_soduvattu_detail_chitiet">Số dư vật tư chi tiết</string>
+
+    <!-- Giao nhận -->
+
+    <string name="giaonhan_tim_kiem">Tìm phiếu giao nhận</string>
+    <string name="title_activity_phieu_giao_nhan">Danh sách phiếu chưa giao/nhận hàng</string>
+    <string name="title_activity_them_phieu_giao_nhan">Phiếu Giao/Nhận</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="giaonhan_soct">Số CT</string>
+    <string name="giaonhan_sokien">Số kiện</string>
+    <string name="giaonhan_sokien_min">Số kiện Min</string>
+    <string name="giaonhan_phuongtien">Phương tiện</string>
+    <string name="giaonhan_giacuoc">Giá cước</string>
+    <string name="giaonhan_quangduong">Quãng đường (km)</string>
+    <string name="giaonhan_nguoigiao">Người giao:</string>
+    <string name="giaonhan_giodi">Giờ đi</string>
+    <string name="giaonhan_giove">Giờ về</string>
+    <string name="giaonhan_tongcuoc">Tổng cước</string>
+    <string name="giaonhan_thetich">Thể tích:</string>
+
+    <!--    Dialog cap nhat nhan vien-->
+    <string name="dialog_capnhatnhanvien_txt_nhanvien">Nhân viên</string>
+    <string name="dialog_capnhatnhanvien_et_hint_nhanvien">Chọn nhân viên</string>
+    <string name="dialog_capnhatnhanvienbanhang">Thay đổi nhân viên bán hàng</string>
+    <string name="dialog_capnhatnhanviengiaohang">Thay đổi nhân viên giao hàng</string>
+
+</resources>
+
+
+

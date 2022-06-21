@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_tongquan"
+            android:icon="@drawable/ic_menu_banhang"
+            android:title="@string/menu_giaonhan" />
+<!--            android:icon="@drawable/ic_menu_tongquan"-->
+<!--            android:title="@string/menu_tongquan" />-->
+
+
+
+<!--        <item-->
+<!--            android:id="@+id/nav_giaonhan"-->
+<!--            android:icon="@drawable/ic_menu_banhang"-->
+<!--            android:title="@string/menu_giaonhan" />-->
+
+        <item
+            android:id="@+id/nav_giaohangreport"
+            android:icon="@drawable/ic_menu_baocao"
+            android:title="Báo cáo Giao hàng " />
+
+        <item
+            android:id="@+id/nav_giaohangreportchitiet"
+            android:icon="@drawable/ic_menu_baocao"
+            android:title="Báo cáo Giao hàng chi tiết " />
+
+        <item
+            android:id="@+id/nav_luongnhanvien"
+            android:icon="@drawable/ic_menu_baocao"
+            android:title="Lương " />
+
+
+
+        <item
+            android:id="@+id/nav_cauhinh"
+            android:icon="@drawable/ic_menu_cauhinh"
+            android:title="@string/menu_cauhinh" />
+
+        <item
+            android:id="@+id/nav_test"
+            android:icon="@drawable/ic_menu_cauhinh"
+            android:title="Trạng thái" />
+
+
+    </group>
+
+
+</menu>
